@@ -11,7 +11,7 @@ CREATE TABLE `user`
 (
     id       integer AUTO_INCREMENT PRIMARY KEY,
     login    varchar(30) UNIQUE NOT NULL,
-    password varchar(30)        NOT NULL,
+    password text               NOT NULL,
     type_id  integer            NOT NULL REFERENCES type (id),
     blocked  boolean            NOT NULL DEFAULT FALSE,
     name     varchar(30)        NOT NULL,

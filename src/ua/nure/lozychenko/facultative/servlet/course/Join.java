@@ -36,7 +36,7 @@ public class Join extends HttpServlet {
             journalDao.save(Journal.createJournal(studentDao.get(student.getUser().getId(), student.getCourse().getId()), 0));
 
             resp.sendRedirect(Requests.COURSE_LIST +
-                    "filter=" + req.getSession().getAttribute(Parameters.CURRENT_FILTER) +
+                    "?filter=" + req.getSession().getAttribute(Parameters.CURRENT_FILTER) +
                     "&teacher=" + req.getSession().getAttribute(Parameters.CURRENT_TEACHER) +
                     "&topic=" + req.getSession().getAttribute(Parameters.CURRENT_TOPIC));
         } catch (DBException e) {

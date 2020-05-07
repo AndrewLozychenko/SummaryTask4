@@ -14,6 +14,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.math.BigInteger;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 @WebServlet("/user.login")
 public class Login extends HttpServlet {
@@ -23,8 +26,15 @@ public class Login extends HttpServlet {
         String login = req.getParameter(Parameters.LOGIN);
         String password = req.getParameter(Parameters.PASSWORD);
 
+        MessageDigest digest = null;
+
         UserDao userDao = new UserService();
         try {
+            digest = MessageDigest.getInstance("SHA-1");
+            digest.reset();
+            digest.update(password.getBytes("utf8"));
+            password = String.format("%040x", new BigInteger(1, digest.digest()));
+
             User user = userDao.get(login);
             if (user == null) {
                 req.setAttribute(Parameters.MESSAGE, Messages.ERROR_USER_NOT_EXISTS);
@@ -43,7 +53,7 @@ public class Login extends HttpServlet {
                 req.setAttribute(Parameters.MESSAGE, Messages.ERROR_WRONG_PASSWORD);
                 req.getRequestDispatcher(Pages.USER_LOGIN).forward(req, resp);
             }
-        } catch (DBException e) {
+        } catch (DBException | NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
     }

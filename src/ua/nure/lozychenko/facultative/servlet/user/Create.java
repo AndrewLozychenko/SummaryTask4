@@ -14,6 +14,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.math.BigInteger;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 @WebServlet("/user.create")
 public class Create extends HttpServlet {
@@ -31,9 +34,17 @@ public class Create extends HttpServlet {
 
         String message;
 
+        MessageDigest digest;
+
         UserDao userDao = new UserService();
         TypeDao typeDao = new TypeService();
         try {
+            digest = MessageDigest.getInstance("SHA-1");
+            digest.reset();
+            digest.update(password.getBytes("utf8"));
+            password = String.format("%040x", new BigInteger(1, digest.digest()));
+
+
             User user = User.createUser(
                     login,
                     password,
@@ -58,7 +69,7 @@ public class Create extends HttpServlet {
                 req.setAttribute(Parameters.USER, user);
                 req.getRequestDispatcher(Pages.USER_CREATE).forward(req, resp);
             }
-        } catch (DBException e) {
+        } catch (DBException | NoSuchAlgorithmException e) {
             if (e.getMessage().contains(DUPLICATE)) {
                 req.setAttribute(Parameters.MESSAGE, name + Messages.ERROR_USER_ALREADY_EXISTS);
                 req.getRequestDispatcher(Pages.USER_CREATE).forward(req, resp);

@@ -13,6 +13,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.math.BigInteger;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 @WebServlet("/user.change_password")
 public class ChangePassword extends HttpServlet {
@@ -20,12 +23,20 @@ public class ChangePassword extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setCharacterEncoding("UTF-8");
         String password = req.getParameter(Parameters.PASSWORD);
+
+        MessageDigest digest = null;
+
         User user = (User) req.getSession().getAttribute(Parameters.USER);
 
         String message;
 
         UserDao userDao = new UserService();
         try {
+            digest = MessageDigest.getInstance("SHA-1");
+            digest.reset();
+            digest.update(password.getBytes("utf8"));
+            password = String.format("%040x", new BigInteger(1, digest.digest()));
+
             user.setPassword(password);
             if ((message = user.validate()) == null) {
                 userDao.update(user, user);
@@ -35,7 +46,7 @@ public class ChangePassword extends HttpServlet {
                 req.setAttribute(Parameters.MESSAGE, message);
                 req.getRequestDispatcher(Pages.USER_CHANGE_PASSWORD).forward(req, resp);
             }
-        } catch (DBException e) {
+        } catch (DBException | NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
     }
