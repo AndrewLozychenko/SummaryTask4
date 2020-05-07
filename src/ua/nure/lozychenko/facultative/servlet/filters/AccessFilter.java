@@ -60,7 +60,7 @@ public class AccessFilter implements Filter {
                             req.setAttribute(Parameters.MESSAGE,
                                     prop.get("message.course.missing_params"));
                             req.setAttribute(Parameters.ACTIONS, new Action[]{
-                                    new Action("Courses", Requests.COURSE_LIST)
+                                    new Action(prop.get("labels.course_list").toString(), Requests.COURSE_LIST)
                             });
                             req.getRequestDispatcher(Pages.MESSAGE).forward(req, resp);
                         } else {
@@ -72,7 +72,7 @@ public class AccessFilter implements Filter {
                             req.setAttribute(Parameters.MESSAGE,
                                     prop.get("message.topic.missing_params"));
                             req.setAttribute(Parameters.ACTIONS, new Action[]{
-                                    new Action("Topics", Requests.TOPIC_LIST)
+                                    new Action(prop.get("labels.topic_list").toString(), Requests.TOPIC_LIST)
                             });
                             req.getRequestDispatcher(Pages.MESSAGE).forward(req, resp);
                         } else {
@@ -83,7 +83,7 @@ public class AccessFilter implements Filter {
                             req.setAttribute(Parameters.MESSAGE,
                                     prop.get("message.user.missing_params"));
                             req.setAttribute(Parameters.ACTIONS, new Action[]{
-                                    new Action("Students", Requests.USER_LIST_STUDENTS_FILTERED)
+                                    new Action(prop.get("labels.student_list").toString(), Requests.USER_LIST_STUDENTS_FILTERED)
                             });
                             req.getRequestDispatcher(Pages.MESSAGE).forward(req, resp);
                         } else {
@@ -103,7 +103,7 @@ public class AccessFilter implements Filter {
                         req.setAttribute(Parameters.MESSAGE,
                                 prop.get("message.journal.missing_params"));
                         req.setAttribute(Parameters.ACTIONS, new Action[]{
-                                new Action("Courses", Requests.COURSE_LIST)
+                                new Action(prop.get("labels.course_list").toString(), Requests.COURSE_LIST)
                         });
                         req.getRequestDispatcher(Pages.MESSAGE).forward(req, resp);
                     } else {
@@ -120,7 +120,7 @@ public class AccessFilter implements Filter {
                         req.setAttribute(Parameters.MESSAGE,
                                 prop.get("message.course.join_leave.missing_params"));
                         req.setAttribute(Parameters.ACTIONS, new Action[]{
-                                new Action("Courses", Requests.COURSE_LIST)
+                                new Action(prop.get("labels.course_list").toString(), Requests.COURSE_LIST)
                         });
                         req.getRequestDispatcher(Pages.MESSAGE).forward(req, resp);
                     } else {
@@ -137,8 +137,8 @@ public class AccessFilter implements Filter {
             if (!req.getRequestURI().contains(Requests.USER_LOGIN) && !req.getRequestURI().contains(Requests.USER_CREATE)) {
                 req.setAttribute(Parameters.MESSAGE, prop.get("message.not_logined"));
                 req.setAttribute(Parameters.ACTIONS, new Action[]{
-                        new Action("Login", Pages.USER_LOGIN),
-                        new Action("Registartion", Pages.USER_CREATE)
+                        new Action(prop.get("buttons.login").toString(), Pages.USER_LOGIN),
+                        new Action(prop.get("buttons.registration").toString(), Pages.USER_CREATE)
                 });
                 req.getRequestDispatcher(Pages.MESSAGE).forward(req, resp);
             } else {
