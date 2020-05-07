@@ -60,5 +60,6 @@
         </tr>
     </c:forEach>
 </table>
+<input type="button" value="<fmt:message key="buttons.download"/>" onclick=location.href="user.recordBook">
 </body>
 </html>

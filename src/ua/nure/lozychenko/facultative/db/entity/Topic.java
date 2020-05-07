@@ -1,7 +1,5 @@
 package ua.nure.lozychenko.facultative.db.entity;
 
-import ua.nure.lozychenko.facultative.constants.Messages;
-
 public class Topic {
     private long id;
     private String name;
@@ -41,7 +39,7 @@ public class Topic {
 
     public String validate() {
         if (name == null || "".equals(name)) {
-            return "name" + Messages.ERROR_FIELD_CAN_NOT_BE_EMPTY;
+            return "name";
         }
         return null;
     }

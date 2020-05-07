@@ -9,7 +9,10 @@ import ua.nure.lozychenko.facultative.db.entity.User;
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
 
 public class AccessFilter implements Filter {
     @Override
@@ -23,6 +26,18 @@ public class AccessFilter implements Filter {
         HttpServletRequest req = (HttpServletRequest) servletRequest;
         HttpServletResponse resp = (HttpServletResponse) servletResponse;
 
+        String locale = (String) req.getSession().getAttribute("currentLocale");
+        Properties prop = new Properties();
+
+        if ("ua".equals(locale)) {
+            locale = "src/resources_ua.properties";
+        } else {
+            locale = "src/resources.properties";
+        }
+
+        InputStream inputStream = new FileInputStream(locale);
+        prop.load(inputStream);
+
         User user = (User) req.getSession().getAttribute(Parameters.USER);
         if (user != null) {
             if (req.getRequestURI().contains(Requests.USER_LOGIN)) {
@@ -33,6 +48,7 @@ public class AccessFilter implements Filter {
                     || req.getRequestURI().contains(Requests.TOPIC_CREATE)
                     || req.getRequestURI().contains(Requests.TOPIC_EDIT)
                     || req.getRequestURI().contains(Requests.TOPIC_REMOVE)
+                    || req.getRequestURI().contains(Requests.TOPIC_LIST)
                     || req.getRequestURI().contains(Requests.USER_LIST)
                     || req.getRequestURI().contains(Requests.USER_BLOCK)
                     || (req.getRequestURI().contains(Requests.USER_CREATE) && (Types.ADMIN.equals(user.getType().getName())))
@@ -42,7 +58,7 @@ public class AccessFilter implements Filter {
                             || req.getRequestURI().contains(Requests.COURSE_REMOVE)) {
                         if (req.getParameter(Parameters.ID) == null) {
                             req.setAttribute(Parameters.MESSAGE,
-                                    "Missing required parameter \"id\". You must select course from list");
+                                    prop.get("message.course.missing_params"));
                             req.setAttribute(Parameters.ACTIONS, new Action[]{
                                     new Action("Courses", Requests.COURSE_LIST)
                             });
@@ -54,7 +70,7 @@ public class AccessFilter implements Filter {
                             || req.getRequestURI().contains(Requests.TOPIC_REMOVE)) {
                         if (req.getParameter(Parameters.ID) == null) {
                             req.setAttribute(Parameters.MESSAGE,
-                                    "Missing required parameter \"id\". You must select course from list");
+                                    prop.get("message.topic.missing_params"));
                             req.setAttribute(Parameters.ACTIONS, new Action[]{
                                     new Action("Topics", Requests.TOPIC_LIST)
                             });
@@ -65,7 +81,7 @@ public class AccessFilter implements Filter {
                     } else if (req.getRequestURI().contains(Requests.USER_BLOCK)) {
                         if (req.getParameter(Parameters.LOGIN) == null) {
                             req.setAttribute(Parameters.MESSAGE,
-                                    "Missing required parameter \"login\". You must select student from list");
+                                    prop.get("message.user.missing_params"));
                             req.setAttribute(Parameters.ACTIONS, new Action[]{
                                     new Action("Students", Requests.USER_LIST_STUDENTS_FILTERED)
                             });
@@ -77,7 +93,7 @@ public class AccessFilter implements Filter {
                         filterChain.doFilter(req, resp);
                     }
                 } else {
-                    req.setAttribute(Parameters.MESSAGE, "Access denied. For admins only");
+                    req.setAttribute(Parameters.MESSAGE, prop.get("message.access_denied.admin"));
                     req.getRequestDispatcher(Pages.MESSAGE).forward(req, resp);
                 }
             } else if (req.getRequestURI().contains(Requests.JOURNAL_SAVE)) {
@@ -85,7 +101,7 @@ public class AccessFilter implements Filter {
                     if (req.getParameter(Parameters.JOURNAL) == null
                             || req.getParameter(Parameters.MARK) == null) {
                         req.setAttribute(Parameters.MESSAGE,
-                                "Missing required parameters \"journal\" and/or \"mark\". You must set marks in journal");
+                                prop.get("message.journal.missing_params"));
                         req.setAttribute(Parameters.ACTIONS, new Action[]{
                                 new Action("Courses", Requests.COURSE_LIST)
                         });
@@ -94,7 +110,7 @@ public class AccessFilter implements Filter {
                         filterChain.doFilter(req, resp);
                     }
                 } else {
-                    req.setAttribute(Parameters.MESSAGE, "Access denied. For teachers only");
+                    req.setAttribute(Parameters.MESSAGE, prop.get("message.access_denied.teacher"));
                     req.getRequestDispatcher(Pages.MESSAGE).forward(req, resp);
                 }
             } else if (req.getRequestURI().contains(Requests.COURSE_JOIN)
@@ -102,7 +118,7 @@ public class AccessFilter implements Filter {
                 if (Types.STUDENT.equals(user.getType().getName())) {
                     if (req.getParameter(Parameters.COURSE) == null) {
                         req.setAttribute(Parameters.MESSAGE,
-                                "Missing required parameter \"course\". You must select course from list");
+                                prop.get("message.course.join_leave.missing_params"));
                         req.setAttribute(Parameters.ACTIONS, new Action[]{
                                 new Action("Courses", Requests.COURSE_LIST)
                         });
@@ -111,7 +127,7 @@ public class AccessFilter implements Filter {
                         filterChain.doFilter(req, resp);
                     }
                 } else {
-                    req.setAttribute(Parameters.MESSAGE, "Access denied. For students only");
+                    req.setAttribute(Parameters.MESSAGE, prop.get("message.access_denied.stundet"));
                     req.getRequestDispatcher(Pages.MESSAGE).forward(req, resp);
                 }
             } else {
@@ -119,7 +135,7 @@ public class AccessFilter implements Filter {
             }
         } else {
             if (!req.getRequestURI().contains(Requests.USER_LOGIN) && !req.getRequestURI().contains(Requests.USER_CREATE)) {
-                req.setAttribute(Parameters.MESSAGE, "Access denied. You must login or register first");
+                req.setAttribute(Parameters.MESSAGE, prop.get("message.not_logined"));
                 req.setAttribute(Parameters.ACTIONS, new Action[]{
                         new Action("Login", Pages.USER_LOGIN),
                         new Action("Registartion", Pages.USER_CREATE)

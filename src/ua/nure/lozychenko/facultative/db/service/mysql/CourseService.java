@@ -48,11 +48,15 @@ public class CourseService extends Service<Course> implements CourseDao {
                     "AND " +
                     "(SELECT COUNT(student.id) FROM student " +
                     "WHERE course_id = course.id) < party_limit)";
+    ;
 
     private static final String SQL_GET_STARTED = SQL_GET_JOINED +
             " AND YEAR(begin) <= YEAR(CURDATE()) " +
+            "AND YEAR(end) >= YEAR(CURDATE()) " +
             "AND MONTH(begin) <= MONTH(CURDATE()) " +
-            "AND DAY(begin) < DAY(CURDATE())";
+            "AND MONTH(end) >= MONTH(CURDATE()) " +
+            "AND DAY(begin) < DAY(CURDATE()) " +
+            "AND DAY(end) > DAY(CURDATE())";
 
     private static final String SQL_GET_NOT_STARTED = SQL_GET_JOINED +
             " AND YEAR(begin) >= YEAR(CURDATE()) " +

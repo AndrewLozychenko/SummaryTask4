@@ -13,7 +13,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
 
 @WebServlet("/topic.edit")
 public class Edit extends HttpServlet {
@@ -45,6 +48,19 @@ public class Edit extends HttpServlet {
                 topicDao.update(topic, topic);
                 resp.sendRedirect(Requests.TOPIC_LIST);
             } else {
+                String locale = (String) req.getSession().getAttribute("currentLocale");
+                Properties prop = new Properties();
+
+                if ("ua".equals(locale)) {
+                    locale = "src/resources_ua.properties";
+                } else {
+                    locale = "src/resources.properties";
+                }
+                InputStream inputStream = new FileInputStream(locale);
+                prop.load(inputStream);
+
+                message = message + prop.get("message.cannot_be_empty");
+
                 req.setAttribute(Parameters.TOPIC, topic);
                 req.setAttribute(Parameters.MESSAGE, message);
                 req.getRequestDispatcher(Pages.TOPIC_EDIT).forward(req, resp);

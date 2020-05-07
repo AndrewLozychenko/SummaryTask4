@@ -20,7 +20,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
 
 @WebServlet("/course.edit")
 public class Edit extends HttpServlet {
@@ -66,6 +69,23 @@ public class Edit extends HttpServlet {
                 courseDao.update(course, course);
                 resp.sendRedirect(Requests.COURSE_LIST);
             } else {
+                String locale = (String) req.getSession().getAttribute("currentLocale");
+                Properties prop = new Properties();
+
+                if ("ua".equals(locale)) {
+                    locale = "src/resources_ua.properties";
+                } else {
+                    locale = "src/resources.properties";
+                }
+                InputStream inputStream = new FileInputStream(locale);
+                prop.load(inputStream);
+
+                if (message.equals("wrong_date")) {
+                    message = prop.get("message.wrong_date").toString();
+                } else {
+                    message = message + prop.get("message.cannot_be_empty");
+                }
+
                 req.setAttribute(Parameters.MESSAGE, message);
                 req.setAttribute(Parameters.COURSE, course);
 

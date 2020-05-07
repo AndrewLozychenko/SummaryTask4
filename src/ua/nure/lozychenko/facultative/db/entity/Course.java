@@ -1,8 +1,5 @@
 package ua.nure.lozychenko.facultative.db.entity;
 
-import com.sun.org.apache.xml.internal.security.algorithms.MessageDigestAlgorithm;
-import ua.nure.lozychenko.facultative.constants.Messages;
-
 public class Course {
     private long id;
     private String name;
@@ -97,16 +94,16 @@ public class Course {
 
     public String validate() {
         if (name == null || "".equals(name)) {
-            return "name" + Messages.ERROR_FIELD_CAN_NOT_BE_EMPTY;
+            return "name";
         }
         if (begin == null || "".equals(begin)) {
-            return "begin" + Messages.ERROR_FIELD_CAN_NOT_BE_EMPTY;
+            return "begin";
         }
         if (end == null || "".equals(end)) {
-            return "end" + Messages.ERROR_FIELD_CAN_NOT_BE_EMPTY;
+            return "end";
         }
         if (!validateDate(begin, end)) {
-            return Messages.ERROR_WRONG_DATE;
+            return "wrong_date";
         }
         return null;
     }

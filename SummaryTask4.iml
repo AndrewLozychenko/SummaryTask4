@@ -15,5 +15,6 @@
     <orderEntry type="library" name="javax.servlet-1.4.jar" level="project" />
     <orderEntry type="library" name="javax.servlet-1.4" level="project" />
     <orderEntry type="library" name="javax.servlet-1.4 (2)" level="project" />
+    <orderEntry type="library" name="itextpdf-5.4.0" level="project" />
   </component>
 </module>

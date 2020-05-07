@@ -13,10 +13,13 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.Properties;
 
 @WebServlet("/user.create")
 public class Create extends HttpServlet {
@@ -36,9 +39,21 @@ public class Create extends HttpServlet {
 
         MessageDigest digest;
 
+        String locale = (String) req.getSession().getAttribute("currentLocale");
+        Properties prop = new Properties();
+
+        if ("ua".equals(locale)) {
+            locale = "src/resources_ua.properties";
+        } else {
+            locale = "src/resources.properties";
+        }
+
         UserDao userDao = new UserService();
         TypeDao typeDao = new TypeService();
         try {
+            InputStream inputStream = new FileInputStream(locale);
+            prop.load(inputStream);
+
             digest = MessageDigest.getInstance("SHA-1");
             digest.reset();
             digest.update(password.getBytes("utf8"));
@@ -65,13 +80,21 @@ public class Create extends HttpServlet {
                     resp.sendRedirect(Requests.USER_LIST_ADMINS_FILTERED);
                 }
             } else {
+                if (message.split(",")[1].equals("empty")) {
+                    message = message.split(",")[0] + prop.get("message.cannot_be_empty");
+                } else if (message.split(",")[1].equals("chars")) {
+                    message = message.split(",")[0] + prop.get("message.wrong_chars");
+                } else if (message.split(",")[1].equals("short")) {
+                    message = message.split(",")[0] + prop.get("message.too_short");
+                }
+
                 req.setAttribute(Parameters.MESSAGE, message);
                 req.setAttribute(Parameters.USER, user);
                 req.getRequestDispatcher(Pages.USER_CREATE).forward(req, resp);
             }
         } catch (DBException | NoSuchAlgorithmException e) {
             if (e.getMessage().contains(DUPLICATE)) {
-                req.setAttribute(Parameters.MESSAGE, name + Messages.ERROR_USER_ALREADY_EXISTS);
+                req.setAttribute(Parameters.MESSAGE, name + prop.get("message.already_exists"));
                 req.getRequestDispatcher(Pages.USER_CREATE).forward(req, resp);
             } else {
                 e.printStackTrace();

@@ -1,7 +1,5 @@
 package ua.nure.lozychenko.facultative.db.entity;
 
-import ua.nure.lozychenko.facultative.constants.Messages;
-
 public class User {
     private long id;
     private String login;
@@ -107,24 +105,24 @@ public class User {
 
     public String validate() {
         if (login == null || "".equals(login)) {
-            return "login" + Messages.ERROR_FIELD_CAN_NOT_BE_EMPTY;
+            return "login" + ",empty";
         } else if (!login.matches("[a-z-A-Z-0-9]+")) {
-            return "login" + Messages.ERROR_FIELD_CONTAINS_INAPPROPRIATE_CHARACTERS;
+            return "login" + ",chars";
         } else if (login.length() < 6) {
-            return "login" + Messages.ERROR_TOO_SHORT;
+            return "login" + ",short";
         }
         if (password == null || "".equals(password)) {
-            return "password" + Messages.ERROR_FIELD_CAN_NOT_BE_EMPTY;
+            return "password" + ",empty";
         } else if (!password.matches("[a-z-A-Z-0-9]+")) {
-            return "password" + Messages.ERROR_FIELD_CONTAINS_INAPPROPRIATE_CHARACTERS;
+            return "password" + ",chars";
         } else if (password.length() < 6) {
-            return "password" + Messages.ERROR_TOO_SHORT;
+            return "password" + ",short";
         }
         if (name == null || "".equals(name)) {
-            return "name" + Messages.ERROR_FIELD_CAN_NOT_BE_EMPTY;
+            return "name" + ",empty";
         }
         if (surname == null || "".equals(surname)) {
-            return "surname" + Messages.ERROR_FIELD_CAN_NOT_BE_EMPTY;
+            return "surname" + ",empty";
         }
         return null;
     }
