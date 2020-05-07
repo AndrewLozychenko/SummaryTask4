@@ -1,0 +1,219 @@
+24-Mar-2020 14:22:14.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.0
+24-Mar-2020 14:22:14.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 6 2016 20:15:31 UTC
+24-Mar-2020 14:22:14.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.0
+24-Mar-2020 14:22:14.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+24-Mar-2020 14:22:14.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Mar-2020 14:22:14.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Mar-2020 14:22:14.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             E:\Programs\JDK\jre
+24-Mar-2020 14:22:14.570 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_211-b12
+24-Mar-2020 14:22:14.570 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Mar-2020 14:22:14.570 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\Projects\java\epam\SummaryTask4\tomcat
+24-Mar-2020 14:22:14.570 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\Projects\java\epam\SummaryTask4\tomcat
+24-Mar-2020 14:22:14.571 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Mar-2020 14:22:14.571 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Mar-2020 14:22:14.572 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:\Projects\java\epam\SummaryTask4\tomcat\conf\logging.properties
+24-Mar-2020 14:22:14.572 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Mar-2020 14:22:14.572 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:\Projects\java\epam\SummaryTask4\tomcat
+24-Mar-2020 14:22:14.573 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:\Projects\java\epam\SummaryTask4\tomcat
+24-Mar-2020 14:22:14.573 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:\Projects\java\epam\SummaryTask4\tomcat\temp
+24-Mar-2020 14:22:14.574 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: E:\Programs\JDK\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Programs\JDK\bin;E:\Programs\JDK\bin;E:\Programs\JDK\jre\bin;C:\InterSystems\Cache\bin;C:\app\Andrew_Lozychenko\dbhomeXE\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;E:\Программы\Node Js\;E:\Программы\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\NoteBook FanControl\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\dotnet\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Andrew Lozychenko\AppData\Local\Microsoft\WindowsApps;E:\Программы\Microsoft VS Code\bin;C:\Users\Andrew Lozychenko\AppData\Roaming\npm;E:\Программы\Heroku\bin;C:\Users\Andrew Lozychenko\AppData\Local\GitHubDesktop\bin;E:\Programs\IntelliJ IDEA 2019.3.3\bin;E:\Programs\IntelliJ IDEA Community Edition 2019.3.1\bin;.
+24-Mar-2020 14:22:15.554 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+24-Mar-2020 14:22:15.778 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+24-Mar-2020 14:22:15.781 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+24-Mar-2020 14:22:15.785 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+24-Mar-2020 14:22:15.786 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2333 ms
+24-Mar-2020 14:22:15.917 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+24-Mar-2020 14:22:15.918 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.0
+24-Mar-2020 14:22:15.930 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor E:\Projects\java\epam\SummaryTask4\tomcat\conf\Catalina\localhost\facultative.xml
+24-Mar-2020 14:22:18.065 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2020 14:22:18.218 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor E:\Projects\java\epam\SummaryTask4\tomcat\conf\Catalina\localhost\facultative.xml has finished in 2,274 ms
+24-Mar-2020 14:22:18.219 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\manager
+24-Mar-2020 14:22:18.763 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2020 14:22:18.774 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\manager has finished in 555 ms
+24-Mar-2020 14:22:18.774 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\ROOT
+24-Mar-2020 14:22:19.193 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2020 14:22:19.200 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\ROOT has finished in 426 ms
+24-Mar-2020 14:22:19.207 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8080]
+24-Mar-2020 14:22:19.217 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8009]
+24-Mar-2020 14:22:19.221 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 3433 ms
+24-Mar-2020 14:39:33.798 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] has started
+24-Mar-2020 14:39:36.610 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Exception starting Context with name [/facultative]
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/facultative]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3782)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:292)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5545)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1372)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1376)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1376)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1344)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NoClassDefFoundError: ua/nure/lozychenko/facultative/db/dao/UserDao
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.apache.catalina.util.Introspection.getDeclaredFields(Introspection.java:110)
+	at org.apache.catalina.startup.WebAnnotationSet.loadFieldsAnnotation(WebAnnotationSet.java:262)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationServletAnnotations(WebAnnotationSet.java:136)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationAnnotations(WebAnnotationSet.java:66)
+	at org.apache.catalina.startup.ContextConfig.applicationAnnotationsConfig(ContextConfig.java:328)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:778)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:299)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:94)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5087)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 8 more
+Caused by: java.lang.ClassNotFoundException: ua.nure.lozychenko.facultative.db.dao.UserDao
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1285)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1119)
+	... 21 more
+
+24-Mar-2020 14:39:36.622 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] is completed
+24-Mar-2020 14:41:35.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.0
+24-Mar-2020 14:41:35.860 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 6 2016 20:15:31 UTC
+24-Mar-2020 14:41:35.861 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.0
+24-Mar-2020 14:41:35.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+24-Mar-2020 14:41:35.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Mar-2020 14:41:35.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Mar-2020 14:41:35.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             E:\Programs\JDK\jre
+24-Mar-2020 14:41:35.867 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_211-b12
+24-Mar-2020 14:41:35.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Mar-2020 14:41:35.869 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\Projects\java\epam\SummaryTask4\tomcat
+24-Mar-2020 14:41:35.871 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\Projects\java\epam\SummaryTask4\tomcat
+24-Mar-2020 14:41:35.872 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Mar-2020 14:41:35.873 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Mar-2020 14:41:35.873 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:\Projects\java\epam\SummaryTask4\tomcat\conf\logging.properties
+24-Mar-2020 14:41:35.874 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Mar-2020 14:41:35.874 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:\Projects\java\epam\SummaryTask4\tomcat
+24-Mar-2020 14:41:35.875 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:\Projects\java\epam\SummaryTask4\tomcat
+24-Mar-2020 14:41:35.877 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:\Projects\java\epam\SummaryTask4\tomcat\temp
+24-Mar-2020 14:41:35.879 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: E:\Programs\JDK\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Programs\JDK\bin;E:\Programs\JDK\bin;E:\Programs\JDK\jre\bin;C:\InterSystems\Cache\bin;C:\app\Andrew_Lozychenko\dbhomeXE\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;E:\Программы\Node Js\;E:\Программы\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\NoteBook FanControl\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\dotnet\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Andrew Lozychenko\AppData\Local\Microsoft\WindowsApps;E:\Программы\Microsoft VS Code\bin;C:\Users\Andrew Lozychenko\AppData\Roaming\npm;E:\Программы\Heroku\bin;C:\Users\Andrew Lozychenko\AppData\Local\GitHubDesktop\bin;E:\Programs\IntelliJ IDEA 2019.3.3\bin;E:\Programs\IntelliJ IDEA Community Edition 2019.3.1\bin;.
+24-Mar-2020 14:41:36.123 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+24-Mar-2020 14:41:36.365 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+24-Mar-2020 14:41:36.367 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+24-Mar-2020 14:41:36.371 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+24-Mar-2020 14:41:36.371 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1055 ms
+24-Mar-2020 14:41:36.402 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+24-Mar-2020 14:41:36.403 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.0
+24-Mar-2020 14:41:36.415 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor E:\Projects\java\epam\SummaryTask4\tomcat\conf\Catalina\localhost\facultative.xml
+24-Mar-2020 14:41:37.783 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2020 14:41:37.872 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor E:\Projects\java\epam\SummaryTask4\tomcat\conf\Catalina\localhost\facultative.xml has finished in 1,456 ms
+24-Mar-2020 14:41:37.873 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\manager
+24-Mar-2020 14:41:38.357 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2020 14:41:38.365 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\manager has finished in 492 ms
+24-Mar-2020 14:41:38.366 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\ROOT
+24-Mar-2020 14:41:38.835 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2020 14:41:38.842 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\ROOT has finished in 476 ms
+24-Mar-2020 14:41:38.845 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8080]
+24-Mar-2020 14:41:38.860 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8009]
+24-Mar-2020 14:41:38.863 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 2491 ms
+24-Mar-2020 14:43:59.653 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] has started
+24-Mar-2020 14:44:00.377 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] is completed
+24-Mar-2020 14:45:10.654 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] has started
+24-Mar-2020 14:45:11.404 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] is completed
+24-Mar-2020 14:49:52.934 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] has started
+24-Mar-2020 14:49:53.738 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] is completed
+24-Mar-2020 14:52:14.425 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] has started
+24-Mar-2020 14:52:15.423 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] is completed
+24-Mar-2020 14:53:55.831 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] has started
+24-Mar-2020 14:53:56.457 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] is completed
+24-Mar-2020 14:56:37.105 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] has started
+24-Mar-2020 14:56:37.643 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] is completed
+24-Mar-2020 14:57:07.042 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.0
+24-Mar-2020 14:57:07.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 6 2016 20:15:31 UTC
+24-Mar-2020 14:57:07.046 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.0
+24-Mar-2020 14:57:07.046 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+24-Mar-2020 14:57:07.046 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Mar-2020 14:57:07.046 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Mar-2020 14:57:07.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             E:\Programs\JDK\jre
+24-Mar-2020 14:57:07.050 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_211-b12
+24-Mar-2020 14:57:07.050 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Mar-2020 14:57:07.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\Projects\java\epam\SummaryTask4\tomcat
+24-Mar-2020 14:57:07.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\Projects\java\epam\SummaryTask4\tomcat
+24-Mar-2020 14:57:07.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Mar-2020 14:57:07.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Mar-2020 14:57:07.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:\Projects\java\epam\SummaryTask4\tomcat\conf\logging.properties
+24-Mar-2020 14:57:07.053 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Mar-2020 14:57:07.053 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:\Projects\java\epam\SummaryTask4\tomcat
+24-Mar-2020 14:57:07.054 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:\Projects\java\epam\SummaryTask4\tomcat
+24-Mar-2020 14:57:07.057 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:\Projects\java\epam\SummaryTask4\tomcat\temp
+24-Mar-2020 14:57:07.058 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: E:\Programs\JDK\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Programs\JDK\bin;E:\Programs\JDK\bin;E:\Programs\JDK\jre\bin;C:\InterSystems\Cache\bin;C:\app\Andrew_Lozychenko\dbhomeXE\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;E:\Программы\Node Js\;E:\Программы\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\NoteBook FanControl\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\dotnet\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Andrew Lozychenko\AppData\Local\Microsoft\WindowsApps;E:\Программы\Microsoft VS Code\bin;C:\Users\Andrew Lozychenko\AppData\Roaming\npm;E:\Программы\Heroku\bin;C:\Users\Andrew Lozychenko\AppData\Local\GitHubDesktop\bin;E:\Programs\IntelliJ IDEA 2019.3.3\bin;E:\Programs\IntelliJ IDEA Community Edition 2019.3.1\bin;.
+24-Mar-2020 14:57:07.262 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+24-Mar-2020 14:57:07.450 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+24-Mar-2020 14:57:07.453 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+24-Mar-2020 14:57:07.456 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+24-Mar-2020 14:57:07.457 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 842 ms
+24-Mar-2020 14:57:07.486 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+24-Mar-2020 14:57:07.486 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.0
+24-Mar-2020 14:57:07.497 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor E:\Projects\java\epam\SummaryTask4\tomcat\conf\Catalina\localhost\facultative.xml
+24-Mar-2020 14:57:08.573 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2020 14:57:08.642 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor E:\Projects\java\epam\SummaryTask4\tomcat\conf\Catalina\localhost\facultative.xml has finished in 1,144 ms
+24-Mar-2020 14:57:08.644 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\manager
+24-Mar-2020 14:57:09.089 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2020 14:57:09.100 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\manager has finished in 457 ms
+24-Mar-2020 14:57:09.101 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\ROOT
+24-Mar-2020 14:57:09.502 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2020 14:57:09.508 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\ROOT has finished in 407 ms
+24-Mar-2020 14:57:09.511 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8080]
+24-Mar-2020 14:57:09.522 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8009]
+24-Mar-2020 14:57:09.524 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 2065 ms
+24-Mar-2020 15:01:20.622 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] has started
+24-Mar-2020 15:01:21.367 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] is completed
+24-Mar-2020 15:04:22.163 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] has started
+24-Mar-2020 15:04:23.302 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] is completed
+24-Mar-2020 15:07:57.182 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+24-Mar-2020 15:07:57.183 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+24-Mar-2020 15:07:57.236 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+24-Mar-2020 15:07:57.287 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+24-Mar-2020 15:07:57.312 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+24-Mar-2020 15:07:57.321 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+24-Mar-2020 15:07:57.322 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+24-Mar-2020 15:07:57.323 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+24-Mar-2020 15:07:58.876 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.0
+24-Mar-2020 15:07:58.879 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 6 2016 20:15:31 UTC
+24-Mar-2020 15:07:58.879 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.0
+24-Mar-2020 15:07:58.880 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+24-Mar-2020 15:07:58.880 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Mar-2020 15:07:58.880 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Mar-2020 15:07:58.880 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             E:\Programs\JDK\jre
+24-Mar-2020 15:07:58.883 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_211-b12
+24-Mar-2020 15:07:58.884 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Mar-2020 15:07:58.884 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\Projects\java\epam\SummaryTask4\tomcat
+24-Mar-2020 15:07:58.885 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\Projects\java\epam\SummaryTask4\tomcat
+24-Mar-2020 15:07:58.885 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-Mar-2020 15:07:58.885 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Mar-2020 15:07:58.886 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:\Projects\java\epam\SummaryTask4\tomcat\conf\logging.properties
+24-Mar-2020 15:07:58.886 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Mar-2020 15:07:58.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:\Projects\java\epam\SummaryTask4\tomcat
+24-Mar-2020 15:07:58.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:\Projects\java\epam\SummaryTask4\tomcat
+24-Mar-2020 15:07:58.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:\Projects\java\epam\SummaryTask4\tomcat\temp
+24-Mar-2020 15:07:58.892 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: E:\Programs\JDK\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Programs\JDK\bin;E:\Programs\JDK\bin;E:\Programs\JDK\jre\bin;C:\InterSystems\Cache\bin;C:\app\Andrew_Lozychenko\dbhomeXE\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;E:\Программы\Node Js\;E:\Программы\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\NoteBook FanControl\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\dotnet\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Andrew Lozychenko\AppData\Local\Microsoft\WindowsApps;E:\Программы\Microsoft VS Code\bin;C:\Users\Andrew Lozychenko\AppData\Roaming\npm;E:\Программы\Heroku\bin;C:\Users\Andrew Lozychenko\AppData\Local\GitHubDesktop\bin;E:\Programs\IntelliJ IDEA 2019.3.3\bin;E:\Programs\IntelliJ IDEA Community Edition 2019.3.1\bin;.
+24-Mar-2020 15:07:59.118 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+24-Mar-2020 15:07:59.311 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+24-Mar-2020 15:07:59.314 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+24-Mar-2020 15:07:59.319 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+24-Mar-2020 15:07:59.320 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 861 ms
+24-Mar-2020 15:07:59.353 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+24-Mar-2020 15:07:59.354 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.0
+24-Mar-2020 15:07:59.367 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor E:\Projects\java\epam\SummaryTask4\tomcat\conf\Catalina\localhost\facultative.xml
+24-Mar-2020 15:08:00.434 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2020 15:08:00.514 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor E:\Projects\java\epam\SummaryTask4\tomcat\conf\Catalina\localhost\facultative.xml has finished in 1,147 ms
+24-Mar-2020 15:08:00.516 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\manager
+24-Mar-2020 15:08:00.925 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2020 15:08:00.932 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\manager has finished in 416 ms
+24-Mar-2020 15:08:00.933 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\ROOT
+24-Mar-2020 15:08:01.291 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2020 15:08:01.297 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\ROOT has finished in 365 ms
+24-Mar-2020 15:08:01.302 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8080]
+24-Mar-2020 15:08:01.311 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8009]
+24-Mar-2020 15:08:01.313 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1991 ms
+24-Mar-2020 15:15:13.513 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] has started
+24-Mar-2020 15:15:14.164 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] is completed
+24-Mar-2020 15:21:55.853 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] has started
+24-Mar-2020 15:21:56.383 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] is completed
+24-Mar-2020 15:53:45.278 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] has started
+24-Mar-2020 15:53:45.873 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] is completed
+24-Mar-2020 15:53:55.897 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] has started
+24-Mar-2020 15:53:56.444 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] is completed
+24-Mar-2020 16:08:24.328 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] has started
+24-Mar-2020 16:08:24.946 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] is completed

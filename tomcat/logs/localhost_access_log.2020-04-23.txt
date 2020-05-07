@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [23/Apr/2020:01:13:53 +0300] "GET /facultative/user.login.jsp HTTP/1.1" 200 853
+0:0:0:0:0:0:0:1 - - [23/Apr/2020:01:14:00 +0300] "GET /facultative/user.login?login=student&password=1234 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [23/Apr/2020:01:14:00 +0300] "GET /facultative/user.show.jsp HTTP/1.1" 200 1670
+0:0:0:0:0:0:0:1 - - [23/Apr/2020:01:14:01 +0300] "GET /facultative/course.list? HTTP/1.1" 200 5112
+0:0:0:0:0:0:0:1 - - [23/Apr/2020:01:14:03 +0300] "GET /facultative/course.list?filter=joined HTTP/1.1" 200 2351
+0:0:0:0:0:0:0:1 - - [23/Apr/2020:01:14:04 +0300] "GET /facultative/course.list? HTTP/1.1" 200 5112

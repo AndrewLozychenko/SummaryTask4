@@ -1,0 +1,124 @@
+18-Apr-2020 16:10:32.630 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.0
+18-Apr-2020 16:10:32.632 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 6 2016 20:15:31 UTC
+18-Apr-2020 16:10:32.633 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.0
+18-Apr-2020 16:10:32.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+18-Apr-2020 16:10:32.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+18-Apr-2020 16:10:32.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+18-Apr-2020 16:10:32.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             E:\Programs\JDK\jre
+18-Apr-2020 16:10:32.635 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_211-b12
+18-Apr-2020 16:10:32.637 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+18-Apr-2020 16:10:32.637 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\Projects\java\epam\SummaryTask4\tomcat
+18-Apr-2020 16:10:32.637 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\Projects\java\epam\SummaryTask4\tomcat
+18-Apr-2020 16:10:32.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+18-Apr-2020 16:10:32.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+18-Apr-2020 16:10:32.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:\Projects\java\epam\SummaryTask4\tomcat\conf\logging.properties
+18-Apr-2020 16:10:32.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+18-Apr-2020 16:10:32.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:\Projects\java\epam\SummaryTask4\tomcat
+18-Apr-2020 16:10:32.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:\Projects\java\epam\SummaryTask4\tomcat
+18-Apr-2020 16:10:32.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:\Projects\java\epam\SummaryTask4\tomcat\temp
+18-Apr-2020 16:10:32.640 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: E:\Programs\JDK\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Programs\JDK\bin;E:\Programs\JDK\bin;E:\Programs\JDK\jre\bin;C:\InterSystems\Cache\bin;C:\app\Andrew_Lozychenko\dbhomeXE\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;E:\Программы\Node Js\;E:\Программы\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\NoteBook FanControl\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Andrew Lozychenko\AppData\Local\Microsoft\WindowsApps;C:\Users\Andrew Lozychenko\AppData\Roaming\npm;E:\Программы\Heroku\bin;C:\Users\Andrew Lozychenko\AppData\Local\GitHubDesktop\bin;E:\Programs\IntelliJ IDEA 2019.3.3\bin;E:\Programs\IntelliJ IDEA Community Edition 2019.3.1\bin;.
+18-Apr-2020 16:10:32.839 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+18-Apr-2020 16:10:33.005 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+18-Apr-2020 16:10:33.009 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+18-Apr-2020 16:10:33.012 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+18-Apr-2020 16:10:33.013 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 781 ms
+18-Apr-2020 16:10:33.048 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+18-Apr-2020 16:10:33.049 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.0
+18-Apr-2020 16:10:33.116 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor E:\Projects\java\epam\SummaryTask4\tomcat\conf\Catalina\localhost\facultative.xml
+18-Apr-2020 16:10:34.198 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Apr-2020 16:10:34.263 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor E:\Projects\java\epam\SummaryTask4\tomcat\conf\Catalina\localhost\facultative.xml has finished in 1,146 ms
+18-Apr-2020 16:10:34.264 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\manager
+18-Apr-2020 16:10:34.655 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Apr-2020 16:10:34.663 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\manager has finished in 399 ms
+18-Apr-2020 16:10:34.664 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\ROOT
+18-Apr-2020 16:10:35.031 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Apr-2020 16:10:35.039 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\ROOT has finished in 375 ms
+18-Apr-2020 16:10:35.043 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8080]
+18-Apr-2020 16:10:35.053 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8009]
+18-Apr-2020 16:10:35.057 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 2042 ms
+18-Apr-2020 16:20:44.108 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] has started
+18-Apr-2020 16:20:46.078 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] is completed
+18-Apr-2020 16:21:20.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.0
+18-Apr-2020 16:21:20.289 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 6 2016 20:15:31 UTC
+18-Apr-2020 16:21:20.289 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.0
+18-Apr-2020 16:21:20.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+18-Apr-2020 16:21:20.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+18-Apr-2020 16:21:20.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+18-Apr-2020 16:21:20.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             E:\Programs\JDK\jre
+18-Apr-2020 16:21:20.293 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_211-b12
+18-Apr-2020 16:21:20.293 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+18-Apr-2020 16:21:20.294 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\Projects\java\epam\SummaryTask4\tomcat
+18-Apr-2020 16:21:20.294 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\Projects\java\epam\SummaryTask4\tomcat
+18-Apr-2020 16:21:20.295 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+18-Apr-2020 16:21:20.295 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+18-Apr-2020 16:21:20.295 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:\Projects\java\epam\SummaryTask4\tomcat\conf\logging.properties
+18-Apr-2020 16:21:20.296 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+18-Apr-2020 16:21:20.296 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:\Projects\java\epam\SummaryTask4\tomcat
+18-Apr-2020 16:21:20.296 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:\Projects\java\epam\SummaryTask4\tomcat
+18-Apr-2020 16:21:20.297 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:\Projects\java\epam\SummaryTask4\tomcat\temp
+18-Apr-2020 16:21:20.298 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: E:\Programs\JDK\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Programs\JDK\bin;E:\Programs\JDK\bin;E:\Programs\JDK\jre\bin;C:\InterSystems\Cache\bin;C:\app\Andrew_Lozychenko\dbhomeXE\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;E:\Программы\Node Js\;E:\Программы\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\NoteBook FanControl\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Andrew Lozychenko\AppData\Local\Microsoft\WindowsApps;C:\Users\Andrew Lozychenko\AppData\Roaming\npm;E:\Программы\Heroku\bin;C:\Users\Andrew Lozychenko\AppData\Local\GitHubDesktop\bin;E:\Programs\IntelliJ IDEA 2019.3.3\bin;E:\Programs\IntelliJ IDEA Community Edition 2019.3.1\bin;.
+18-Apr-2020 16:21:20.529 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+18-Apr-2020 16:21:20.712 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+18-Apr-2020 16:21:20.715 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+18-Apr-2020 16:21:20.718 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+18-Apr-2020 16:21:20.720 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 850 ms
+18-Apr-2020 16:21:20.761 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+18-Apr-2020 16:21:20.762 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.0
+18-Apr-2020 16:21:20.774 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor E:\Projects\java\epam\SummaryTask4\tomcat\conf\Catalina\localhost\facultative.xml
+18-Apr-2020 16:21:21.983 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Apr-2020 16:21:22.049 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor E:\Projects\java\epam\SummaryTask4\tomcat\conf\Catalina\localhost\facultative.xml has finished in 1,274 ms
+18-Apr-2020 16:21:22.050 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\manager
+18-Apr-2020 16:21:22.522 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Apr-2020 16:21:22.531 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\manager has finished in 481 ms
+18-Apr-2020 16:21:22.532 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\ROOT
+18-Apr-2020 16:21:22.974 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Apr-2020 16:21:22.981 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\ROOT has finished in 449 ms
+18-Apr-2020 16:21:22.984 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8080]
+18-Apr-2020 16:21:22.994 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8009]
+18-Apr-2020 16:21:22.997 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 2276 ms
+18-Apr-2020 16:24:14.850 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] has started
+18-Apr-2020 16:24:15.588 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] is completed
+18-Apr-2020 16:45:17.738 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] has started
+18-Apr-2020 16:45:18.688 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] is completed
+18-Apr-2020 16:52:04.663 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] has started
+18-Apr-2020 16:52:05.175 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] is completed
+18-Apr-2020 16:53:16.203 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] has started
+18-Apr-2020 16:53:16.723 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/facultative] is completed
+18-Apr-2020 16:58:51.029 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.0
+18-Apr-2020 16:58:51.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 6 2016 20:15:31 UTC
+18-Apr-2020 16:58:51.033 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.0
+18-Apr-2020 16:58:51.033 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+18-Apr-2020 16:58:51.033 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+18-Apr-2020 16:58:51.033 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+18-Apr-2020 16:58:51.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             E:\Programs\JDK\jre
+18-Apr-2020 16:58:51.036 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_211-b12
+18-Apr-2020 16:58:51.036 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+18-Apr-2020 16:58:51.037 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\Projects\java\epam\SummaryTask4\tomcat
+18-Apr-2020 16:58:51.037 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\Projects\java\epam\SummaryTask4\tomcat
+18-Apr-2020 16:58:51.038 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+18-Apr-2020 16:58:51.038 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+18-Apr-2020 16:58:51.038 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:\Projects\java\epam\SummaryTask4\tomcat\conf\logging.properties
+18-Apr-2020 16:58:51.039 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+18-Apr-2020 16:58:51.039 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:\Projects\java\epam\SummaryTask4\tomcat
+18-Apr-2020 16:58:51.039 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:\Projects\java\epam\SummaryTask4\tomcat
+18-Apr-2020 16:58:51.040 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:\Projects\java\epam\SummaryTask4\tomcat\temp
+18-Apr-2020 16:58:51.040 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: E:\Programs\JDK\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Programs\JDK\bin;E:\Programs\JDK\bin;E:\Programs\JDK\jre\bin;C:\InterSystems\Cache\bin;C:\app\Andrew_Lozychenko\dbhomeXE\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;E:\Программы\Node Js\;E:\Программы\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\NoteBook FanControl\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Andrew Lozychenko\AppData\Local\Microsoft\WindowsApps;C:\Users\Andrew Lozychenko\AppData\Roaming\npm;E:\Программы\Heroku\bin;C:\Users\Andrew Lozychenko\AppData\Local\GitHubDesktop\bin;E:\Programs\IntelliJ IDEA 2019.3.3\bin;E:\Programs\IntelliJ IDEA Community Edition 2019.3.1\bin;.
+18-Apr-2020 16:58:51.245 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+18-Apr-2020 16:58:51.431 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+18-Apr-2020 16:58:51.434 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+18-Apr-2020 16:58:51.437 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+18-Apr-2020 16:58:51.438 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 817 ms
+18-Apr-2020 16:58:51.473 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+18-Apr-2020 16:58:51.474 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.0
+18-Apr-2020 16:58:51.486 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor E:\Projects\java\epam\SummaryTask4\tomcat\conf\Catalina\localhost\facultative.xml
+18-Apr-2020 16:58:52.591 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Apr-2020 16:58:52.654 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor E:\Projects\java\epam\SummaryTask4\tomcat\conf\Catalina\localhost\facultative.xml has finished in 1,168 ms
+18-Apr-2020 16:58:52.656 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\manager
+18-Apr-2020 16:58:53.089 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Apr-2020 16:58:53.097 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\manager has finished in 441 ms
+18-Apr-2020 16:58:53.098 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\ROOT
+18-Apr-2020 16:58:53.533 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Apr-2020 16:58:53.538 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Projects\java\epam\SummaryTask4\tomcat\webapps\ROOT has finished in 441 ms
+18-Apr-2020 16:58:53.543 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8080]
+18-Apr-2020 16:58:53.553 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8009]
+18-Apr-2020 16:58:53.556 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 2117 ms
