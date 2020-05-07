@@ -5,20 +5,27 @@
 <% request.setCharacterEncoding("UTF-8"); %>
 
 <html>
-<title><fmt:message key="labels.user_show"/></title>
+<head>
+    <title><fmt:message key="labels.user_show"/></title>
+</head>
 <body>
+<jsp:include page="parts/header.jsp"/>
 <jsp:include page="parts/profile_menu_${user.type.name}.jsp"/>
-<br>
-<fmt:message key="labels.user_show"/>
-<hr>
-<jsp:include page="./settings.jsp"></jsp:include>
-<f:profile user="${user}"/>
-<input type="button" value="<fmt:message key="buttons.edit"/>"
-       onclick=location.href="http://localhost:8080/facultative/user.edit.jsp">
-<input type="button" value="<fmt:message key="buttons.change_password"/>"
-       onclick=location.href="http://localhost:8080/facultative/user.change_password.jsp">
-<form action="user.remove" method="post">
-    <input type="submit" value="<fmt:message key="buttons.remove"/>">
-</form>
+<div>
+    <br>
+    <fmt:message key="labels.user_show"/>
+    <hr>
+    <jsp:include page="./settings.jsp"></jsp:include>
+    <f:profile user="${user}"/>
+    <input type="button" value="<fmt:message key="buttons.edit"/>"
+           onclick=location.href="http://localhost:8080/facultative/user.edit.jsp">
+    <input type="button" value="<fmt:message key="buttons.change_password"/>"
+           onclick=location.href="http://localhost:8080/facultative/user.change_password.jsp">
+    <br>
+    <form action="user.remove" method="post">
+        <input type="submit" value="<fmt:message key="buttons.remove"/>">
+    </form>
+</div>
+<jsp:include page="parts/footer.jsp"/>
 </body>
 </html>

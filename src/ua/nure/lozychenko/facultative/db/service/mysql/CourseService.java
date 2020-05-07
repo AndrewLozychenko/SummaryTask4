@@ -86,7 +86,7 @@ public class CourseService extends Service<Course> implements CourseDao {
             "WHERE id = ?";
 
     public static final String BY_NAME_ASC = " ORDER BY name";
-    public static final String BY_NAME_DESC = "ORDER BY name DESC";
+    public static final String BY_NAME_DESC = " ORDER BY name DESC";
 
     public static final String BY_DURATION_ASC = " ORDER BY DAY(c.end) - DAY(c.begin) + " +
             "(MONTH(c.end) - MONTH(c.begin) * 30) + " +
@@ -95,10 +95,10 @@ public class CourseService extends Service<Course> implements CourseDao {
             "(MONTH(c.end) - MONTH(c.begin) * 30) + " +
             "(YEAR(c.end) - YEAR(c.begin) * 365) DESC";
 
-    public static final String BY_STUDENT_COUNT_ASC = " ORDER BY COUNT" +
-            "((SELECT user_id FROM student WHERE course_id = c.id))";
-    public static final String BY_STUDENT_COUNT_DESC = " ORDER BY COUNT" +
-            "((SELECT user_id FROM student WHERE course_id = c.id)) DESC";
+    public static final String BY_STUDENT_COUNT_ASC = " ORDER BY " +
+            "(SELECT COUNT(user_id) FROM student WHERE course_id = c.id)";
+    public static final String BY_STUDENT_COUNT_DESC = " ORDER BY " +
+            "(SELECT COUNT(user_id) FROM student WHERE course_id = c.id) DESC";
 
     private String setFilters(String query, User teacher, Topic topic, String sort, boolean withOuterSelect) {
         StringBuilder res = new StringBuilder();
