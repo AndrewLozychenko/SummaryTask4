@@ -63,7 +63,7 @@ public class Edit extends HttpServlet {
         TopicDao topicDao = new TopicService();
         UserDao userDao = new UserService();
         try {
-            Course course = new Course(id, name, userDao.get(teacher), topicDao.get(topic), begin, end, partyLimit);
+            Course course = new Course(id, name, userDao.get(teacher), topicDao.get(topic), begin, end, partyLimit, 0);
 
             if ((message = course.validate()) == null) {
                 courseDao.update(course, course);

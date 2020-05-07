@@ -22,21 +22,22 @@ public class CourseService extends Service<Course> implements CourseDao {
     private static final String FILTER_BY_TOPIC = " c.topic_id = ? ";
     private static final String GROUP_BY_ID = " GROUP BY c.id";
 
-    private static final String SQL_GET_ALL = "SELECT c.* FROM course AS c " +
-            "WHERE c.id NOT IN " +
-            "(SELECT course_id FROM student) " +
-            "OR c.id IN " +
-            "(SELECT course_id FROM student) " +
-            "AND " +
-            "(SELECT COUNT(student.id) FROM student " +
-            "WHERE course_id = c.id) < party_limit";
+    private static final String SQL_GET_ALL =
+            "SELECT c.*,(SELECT COUNT(student.id) FROM student WHERE course_id = c.id) AS cur_stud_count FROM course AS c " +
+                    "WHERE c.id NOT IN " +
+                    "(SELECT course_id FROM student) " +
+                    "OR c.id IN " +
+                    "(SELECT course_id FROM student) " +
+                    "AND " +
+                    "(SELECT COUNT(student.id) FROM student " +
+                    "WHERE course_id = c.id) < party_limit";
 
     private static final String SQL_GET_JOINED = "SELECT DISTINCT course.* FROM course, student " +
             "WHERE course.id = course_id " +
             "AND user_id = ?";
 
     private static final String SQL_GET_NOT_JOINED =
-            "SELECT DISTINCT course.* FROM course, student " +
+            "SELECT DISTINCT course.*, (SELECT COUNT(student.id) FROM student WHERE course_id = course.id) AS cur_stud_count FROM course, student " +
                     "WHERE course.id NOT IN " +
                     "(SELECT course.id FROM course, student " +
                     "WHERE course.id = course_id " +
@@ -48,7 +49,6 @@ public class CourseService extends Service<Course> implements CourseDao {
                     "AND " +
                     "(SELECT COUNT(student.id) FROM student " +
                     "WHERE course_id = course.id) < party_limit)";
-    ;
 
     private static final String SQL_GET_STARTED = SQL_GET_JOINED +
             " AND YEAR(begin) <= YEAR(CURDATE()) " +
@@ -261,14 +261,29 @@ public class CourseService extends Service<Course> implements CourseDao {
     }
 
     private Course unpack(ResultSet resultSet) throws SQLException, DBException {
-        return new Course(
-                resultSet.getLong(Fields.Course.CID),
-                resultSet.getString(Fields.Course.NAME),
-                new UserService().get(resultSet.getLong(Fields.Course.TEACHER)),
-                new TopicService().get(resultSet.getLong(Fields.Course.TOPIC)),
-                resultSet.getString(Fields.Course.BEGIN),
-                resultSet.getString(Fields.Course.END),
-                resultSet.getInt(Fields.Course.PARTY_LIMIT)
-        );
+        try {
+            resultSet.findColumn(Fields.Course.CURRENT_STUDENT_COUNT);
+            return new Course(
+                    resultSet.getLong(Fields.Course.CID),
+                    resultSet.getString(Fields.Course.NAME),
+                    new UserService().get(resultSet.getLong(Fields.Course.TEACHER)),
+                    new TopicService().get(resultSet.getLong(Fields.Course.TOPIC)),
+                    resultSet.getString(Fields.Course.BEGIN),
+                    resultSet.getString(Fields.Course.END),
+                    resultSet.getInt(Fields.Course.PARTY_LIMIT),
+                    resultSet.getInt(Fields.Course.CURRENT_STUDENT_COUNT)
+            );
+        } catch (SQLException e) {
+            return new Course(
+                    resultSet.getLong(Fields.Course.CID),
+                    resultSet.getString(Fields.Course.NAME),
+                    new UserService().get(resultSet.getLong(Fields.Course.TEACHER)),
+                    new TopicService().get(resultSet.getLong(Fields.Course.TOPIC)),
+                    resultSet.getString(Fields.Course.BEGIN),
+                    resultSet.getString(Fields.Course.END),
+                    resultSet.getInt(Fields.Course.PARTY_LIMIT),
+                    0
+            );
+        }
     }
 }

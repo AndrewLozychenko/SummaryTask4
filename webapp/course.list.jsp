@@ -110,6 +110,11 @@
         <th>
             <fmt:message key="labels.party_limit"/>
         </th>
+        <c:if test="${currentFilter==\"all\"}">
+            <th>
+                <fmt:message key="labels.student_count"/>
+            </th>
+        </c:if>
     </tr>
     <c:forEach items="${courses}" var="course">
         <tr>
@@ -133,6 +138,11 @@
             <td>
                     ${course.partyLimit}
             </td>
+            <c:if test="${currentFilter==\"all\"}">
+                <td>
+                        ${course.currentStudentCount}
+                </td>
+            </c:if>
             <c:choose>
                 <c:when test="${user.type.name == \"admin\"}">
                     <td>

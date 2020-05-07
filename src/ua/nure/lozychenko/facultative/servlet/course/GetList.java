@@ -1,7 +1,5 @@
 package ua.nure.lozychenko.facultative.servlet.course;
 
-import org.apache.log4j.BasicConfigurator;
-import org.apache.log4j.Logger;
 import ua.nure.lozychenko.facultative.DBException;
 import ua.nure.lozychenko.facultative.constants.Filters;
 import ua.nure.lozychenko.facultative.constants.Pages;

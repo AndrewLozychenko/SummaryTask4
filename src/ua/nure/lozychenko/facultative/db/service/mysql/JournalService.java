@@ -19,9 +19,13 @@ public class JournalService extends Service<Journal> implements JournalDao {
             "WHERE student.id = student_id " +
             "AND user_id = ?";
 
-    private static final String SQL_GET_BY_COURSE = "SELECT journal.* FROM journal, student " +
+    private static final String SQL_GET_BY_COURSE = "SELECT journal.* FROM journal, student, course " +
             "WHERE student_id = student.id " +
-            "AND course_id = ?";
+            "AND course_id = ?  " +
+            "AND course.id = course_id " +
+            "AND (year(end) < year(CURDATE()) " +
+            "OR (year(end) <= year(CURDATE()) AND MONTH(end) < MONTH(CURDATE())) " +
+            "OR (year(end) <= year(CURDATE()) AND MONTH(end) <= MONTH(CURDATE()) AND DAY(end) < DAY(CURDATE())))";
 
     private static final String SQL_SAVE = "INSERT INTO journal(student_id, mark) " +
             "VALUES(?, ?)";

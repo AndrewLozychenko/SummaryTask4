@@ -21,6 +21,7 @@ public final class Fields {
         public static final String END = "end";
         public static final String TEACHER = "teacher_id";
         public static final String PARTY_LIMIT = "party_limit";
+        public static final String CURRENT_STUDENT_COUNT = "cur_stud_count";
     }
 
     public class Type {

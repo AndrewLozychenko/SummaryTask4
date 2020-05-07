@@ -8,8 +8,9 @@ public class Course {
     private String begin;
     private String end;
     private int partyLimit;
+    private int currentStudentCount;
 
-    public Course(long id, String name, User teacher, Topic topic, String begin, String end, int partyLimit) {
+    public Course(long id, String name, User teacher, Topic topic, String begin, String end, int partyLimit, int currentStudentCount) {
         this.id = id;
         this.name = name;
         this.teacher = teacher;
@@ -17,10 +18,15 @@ public class Course {
         this.begin = begin;
         this.end = end;
         this.partyLimit = partyLimit;
+        this.currentStudentCount = currentStudentCount;
     }
 
     public static Course createCourse(String name, Topic topic, User teacher, String begin, String end, int partyLimit) {
-        return new Course(0, name, teacher, topic, begin, end, partyLimit);
+        return new Course(0, name, teacher, topic, begin, end, partyLimit, 0);
+    }
+
+    public int getCurrentStudentCount() {
+        return currentStudentCount;
     }
 
     public long getId() {
