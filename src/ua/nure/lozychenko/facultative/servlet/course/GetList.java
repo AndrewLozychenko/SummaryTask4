@@ -59,7 +59,8 @@ public class GetList extends HttpServlet {
                 if (Filters.ALL.equals(filter)) {
                     courses = courseDao.getNotJoined(user.getId(), userDao.get(teacherId), topicDao.get(topicId), sort);
                     if (courses.size() == 0) {
-                        if (courseDao.getAll(userDao.get(teacherId), topicDao.get(topicId), sort).size() != courseDao.getJoined(user.getId(), userDao.get(teacherId), topicDao.get(topicId), sort).size()) {
+                        if (courseDao.getAll(userDao.get(teacherId), topicDao.get(topicId), sort).size() !=
+                                courseDao.getJoined(user.getId(), userDao.get(teacherId), topicDao.get(topicId), sort).size()) {
                             courses = courseDao.getAll(userDao.get(teacherId), topicDao.get(topicId), sort);
                         } else {
                             courses = null;

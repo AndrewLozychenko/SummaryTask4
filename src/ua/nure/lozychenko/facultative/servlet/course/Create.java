@@ -35,7 +35,7 @@ public class Create extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setCharacterEncoding("UTF-8");
         String name = req.getParameter(Parameters.NAME);
         long topic = Long.parseLong(req.getParameter(Parameters.TOPIC));
