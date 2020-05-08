@@ -8,10 +8,10 @@ public class Filters {
 
     public static String[][] getFilters() {
         return new String[][]{
-                {"all", "All"},
-                {"joined", "Joined"},
-                {"joined_started", "Started"},
-                {"joined_not_started", "Not Started"}
+                {ALL, "All"},
+                {JOINED, "Joined"},
+                {JOINED_STARTED, "Started"},
+                {JOINED_NOT_STARTED, "Not Started"}
         };
     }
 }

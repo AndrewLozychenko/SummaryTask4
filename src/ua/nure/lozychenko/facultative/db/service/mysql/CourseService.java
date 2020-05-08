@@ -146,7 +146,6 @@ public class CourseService extends Service<Course> implements CourseDao {
                     break;
             }
         }
-        System.out.println(res.toString());
         return res.toString();
     }
 

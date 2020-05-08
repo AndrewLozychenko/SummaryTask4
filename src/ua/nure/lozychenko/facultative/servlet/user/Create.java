@@ -94,7 +94,7 @@ public class Create extends HttpServlet {
             }
         } catch (DBException | NoSuchAlgorithmException e) {
             if (e.getMessage().contains(DUPLICATE)) {
-                req.setAttribute(Parameters.MESSAGE, name + prop.get("message.already_exists"));
+                req.setAttribute(Parameters.MESSAGE, login + prop.get("message.already_exists"));
                 req.getRequestDispatcher(Pages.USER_CREATE).forward(req, resp);
             } else {
                 e.printStackTrace();

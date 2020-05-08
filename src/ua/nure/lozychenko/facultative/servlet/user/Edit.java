@@ -26,7 +26,6 @@ public class Edit extends HttpServlet {
         String name = req.getParameter(Parameters.NAME);
         String surname = req.getParameter(Parameters.SURNAME);
         String contacts = req.getParameter(Parameters.CONTACTS);
-        System.out.println(name);
         String message;
 
         UserDao userDao = new UserService();

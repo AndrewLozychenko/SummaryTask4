@@ -33,8 +33,7 @@ CREATE TABLE course
     begin       varchar(10)  NOT NULL,
     end         varchar(10)  NOT NULL,
     topic_id    integer      NOT NULL REFERENCES topic (id),
-    party_limit integer      NOT NULL,
-    UNIQUE (name, teacher_id, topic_id)
+    party_limit integer      NOT NULL
 );
 
 CREATE TABLE topic
@@ -60,6 +59,5 @@ CREATE TABLE student
             ON DELETE CASCADE,
     course_id integer NOT NULL
         REFERENCES course (id)
-            ON DELETE CASCADE,
-    UNIQUE (user_id, course_id)
+            ON DELETE CASCADE
 );

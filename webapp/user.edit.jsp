@@ -45,7 +45,7 @@
             </tr>
         </table>
         <input type="button" value="<fmt:message key="buttons.cancel"/>"
-               onclick=location.href="http://localhost:8080/facultative/user.show">
+               onclick=location.href="http://localhost:8080/facultative/user.show.jsp">
         <input type="submit" value="<fmt:message key="buttons.accept"/>">
     </form>
     <h2>${message}</h2>
